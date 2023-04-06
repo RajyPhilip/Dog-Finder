@@ -1,0 +1,157 @@
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+#header {
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/09/09/39/dog-3071189_960_720.jpg);
+    background-size: cover;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#header-img {
+    max-width: 6%;
+    height: auto;
+}
+
+#main-title {
+    width: 30%;
+    position: absolute;
+    top: 40%;
+    margin-left: 7%;
+    color: #6aaed9;
+    text-align: center;
+    background: #f2f2f2ad;
+    border-radius: 20px;
+    padding: 4%;
+    font-size: 2.4em;
+}
+
+/*Header section finished*/
+
+#products {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 1%;
+    justify-content: space-between;
+}
+
+#description {
+    background: #6aaed9;
+    width: 40%;
+    height: 34vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 8%;
+}
+
+.section-title {
+    color: #f2f2f2;
+    font-size: 2em;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    width: 80%;
+}
+
+#description p {
+    padding-left: 10%;
+    color: #f2f2f2;
+    font-size: 1em;
+    width: 80%;
+}
+
+#product-catalogue {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 4%;
+}
+
+#product-catalogue .catal-img {
+    max-width: 28%;
+    height: auto;
+    margin: 2%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#product-catalogue img:hover {
+    transform: scale(1.2);
+}
+
+    /*End of product catalogue*/
+
+
+
+  /*Media queries*/
+@media screen and (max-width: 991px) {
+    #header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vw;
+    }
+
+    #main-title {
+        width: 40%;
+        top: 10%;
+    }
+    #description {
+        height: 69vw;
+    }
+    #product-catalogue .catal-img {
+        max-width: 42%;
+        margin-left: 6%;
+    }
+}
+
+  @media screen and (max-width: 767px) {
+
+    #main-title {
+        width: 80%;
+        top: 15%;
+    }
+    #products {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        width: 98%;
+        margin-top: 5%;
+    }
+    #description {
+        height: auto;
+        width: 80%;
+        margin-left: 4%;
+        padding: 1% 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #product-catalogue {
+        flex-direction: column;
+    }
+    #product-catalogue .catal-img {
+        max-width: 80%;
+    }
+    #product-catalogue img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 478px) {
+
+    #main-title {
+        width: 60%;
+        top: 5%;
+    }
+    #main-title {
+        font-size: 1.5em;
+    }
+}

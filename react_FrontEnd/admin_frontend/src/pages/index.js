@@ -1,0 +1,5 @@
+export { default as Homepage } from './homepage/Homepage'
+export { default as Register } from './register/Rigester'
+export { default as SignIn } from './signIn/SignIn'
+export { default as DogFinder } from './dogFinderHome/dogFinder'
+export { default as AllResult } from './result/result'
